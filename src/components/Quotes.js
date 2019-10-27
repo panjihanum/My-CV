@@ -44,11 +44,13 @@ class Quotes extends React.Component{
                 My<span className="green"> Motivation</span>
             </div>
             <div className="video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/gHhQB8enVqQ" frameBorder="false" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+            <iframe width="568px" height="368px" src="https://www.youtube.com/embed/gHhQB8enVqQ" frameBorder="false" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
             </div>
         </div>
+        
         )
     }
 }
+
 
 export default Quotes;

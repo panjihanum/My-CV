@@ -3,6 +3,9 @@
     width: 100%;
     min-height: 100vh;
     padding: 10px 100px;
+    @media (max-width: 992px) {
+        padding: 10px 0px;
+    }
     position: relative;
     .tree-2{
         min-height: 400px;
@@ -11,7 +14,11 @@
         position: absolute;
         bottom: 0;
         left: 0;  
-        z-index: 0;
+        @media (max-width: 992px) {
+            min-height: 100px;
+            max-height: 300px;
+            margin: 0 auto; 
+        }
     }
     .header{ 
         font-size: 40px;
@@ -20,11 +27,16 @@
         display: block;
         text-align: center;
         z-index: 4;
+        position: relative;
     }
     .row{
         margin: auto;
         .col-md-12 {
+
             .card-custom {
+                @media (max-width: 992px) { 
+                    margin-bottom: 25px;
+                }
                 font-size: 13pt;
                 background: rgb(0,255,94);
                 background: linear-gradient(90deg, #00ff5e 0%, #00ff7e 60%, #00ff72 100%);
