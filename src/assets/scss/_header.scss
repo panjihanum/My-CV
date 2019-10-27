@@ -1,0 +1,50 @@
+.header{
+    width: 100%;
+    display: -webkit-flex; /* Safari */
+    -webkit-flex-direction: row; /* Safari 6.1+ */
+    display: flex;
+    flex-direction: row;
+    overflow: hidden !important;
+    .left {
+        justify-content: left;
+        padding: 15px 0px 0px 20px;
+        img {
+            width: 150px;        
+        }
+        margin: auto 0;
+    }
+    .center {
+        padding: 10px 0px;
+        display: -webkit-flex; /* Safari */
+        -webkit-flex-direction: row; /* Safari 6.1+ */
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: auto;
+        :hover{
+            width: 115px !important;
+        }
+
+        .menu {
+            :active{
+                box-shadow: 0px 0px #575858;
+            }
+            padding: 15px;
+            border-radius: 15px;
+            box-shadow: 1px 2px #575858;
+            margin-right: 10px;
+            cursor: pointer;
+            -webkit-transition: width 0.6s; /* For Safari 3.1 to 6.0 */
+            transition: width 0.6s;
+            width: 130px;
+
+            .menu-link{
+                color: black;
+                font-size: 12pt;
+                @media (min-width: 1600px) { 
+                }
+            }
+
+        }
+    }
+}
