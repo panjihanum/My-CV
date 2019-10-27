@@ -32,7 +32,9 @@
     .row{
         margin: auto;
         .col-md-12 {
-
+            @media (max-width: 992px) { 
+                margin-right: 20px;
+            }
             .card-custom {
                 @media (max-width: 992px) { 
                     margin-bottom: 25px;
