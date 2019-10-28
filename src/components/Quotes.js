@@ -45,9 +45,9 @@ class Quotes extends React.Component{
                 My<span className="green"> Motivation</span>
             </div>
             <div className="video">
-                <div className="wrapper">
-                    <div className="youtube" data-embed="gHhQB8enVqQ">
-                        <div className="play-button"></div>
+                <div class="wrapper">
+                    <div class="youtube" data-embed="gHhQB8enVqQ">
+                        <div class="play-button"></div>
                     </div>
                 </div>
             </div>
