@@ -5,7 +5,7 @@ const Home = () => {
     return (
     <div className="home">
         <div className="content">
-            <img src={require('../assets/images/tree.png')} className="tree"/>
+            <img src={require('../assets/images/webp/tree.webp')} className="tree"/>
             <div className="text-container">
                 <span className="text-content"><span className="green">Pan</span>hanum</span>
                 <span className="text-child-content"><br />
