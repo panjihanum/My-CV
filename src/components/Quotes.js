@@ -2,6 +2,7 @@ import React from "react";
 import '../../src/assets/scss/_quotes.scss';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.js';
+import $ from 'jquery';
 
 class Quotes extends React.Component{
     constructor(props){
@@ -44,13 +45,46 @@ class Quotes extends React.Component{
                 My<span className="green"> Motivation</span>
             </div>
             <div className="video">
-            <iframe width="568px" height="368px" src="https://www.youtube.com/embed/gHhQB8enVqQ" frameBorder="false" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                <div class="wrapper">
+                    <div class="youtube" data-embed="gHhQB8enVqQ">
+                        <div class="play-button"></div>
+                    </div>
+                </div>
             </div>
         </div>
         
         )
     }
 }
+$(() =>{
+    ( function() {
 
+        var youtube = document.querySelectorAll( ".youtube" );
+        
+        for (var i = 0; i < youtube.length; i++) {
+            
+            var source = "https://img.youtube.com/vi/"+ youtube[i].dataset.embed +"/sddefault.jpg";
+            
+            var image = new Image();
+                    image.src = source;
+                    image.addEventListener( "load", function() {
+                        youtube[ i ].appendChild( image );
+                    }( i ) );
+            
+                    youtube[i].addEventListener( "click", function() {
+    
+                        var iframe = document.createElement( "iframe" );
+    
+                                iframe.setAttribute( "frameborder", "0" );
+                                iframe.setAttribute( "allowfullscreen", "" );
+                                iframe.setAttribute( "src", "https://www.youtube.com/embed/"+ this.dataset.embed +"?rel=0&showinfo=0&autoplay=1" );
+    
+                                this.innerHTML = "";
+                                this.appendChild( iframe );
+                    } );    
+        };
+        
+    } )();
+})
 
 export default Quotes;
