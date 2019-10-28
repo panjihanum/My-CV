@@ -1,7 +1,6 @@
 import React from "react";
 import '../../src/assets/scss/_header.scss';
 import $ from 'jquery';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
 class Header extends React.Component{
@@ -34,9 +33,9 @@ class Header extends React.Component{
     }
     render(){
         return (
-            <header className="header" >
+            <header className="header animated fadeInRight" >
                 <nav className="navbar navbar-expand-lg navbar-light">
-                    <img src={require("../assets/images/webp/logo.webp")} />
+                    <img alt="logo" src={require("../assets/images/webp/logo.webp")} />
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>

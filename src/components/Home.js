@@ -5,10 +5,12 @@ const Home = () => {
     return (
     <div className="home">
         <div className="content">
-            <img src={require('../assets/images/webp/tree.webp')} className="tree"/>
+            <img alt="tree" src={require('../assets/images/webp/tree.webp')} className="tree"/>
             <div className="text-container">
-                <span className="text-content"><span className="green">Pan</span>hanum</span>
-                <span className="text-child-content"><br />
+                <div className="animated fadeInLeft delay-1s">
+                    <span className="text-content"><span className="green">Pan</span>hanum</span>
+                </div>
+                <span className="text-child-content animated fadeInLeft delay-2s"><br />
                     Perkenalkan, Saya  <span className="green">Panji</span> Hanum. Dan saya adalah seorang Programmer.
                 </span>
             </div>

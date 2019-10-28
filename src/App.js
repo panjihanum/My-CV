@@ -7,9 +7,9 @@ import './assets/scss/main.scss';
 const Header  = React.lazy(() => import('./components/Header'));
 const Home = React.lazy(() => import('./components/Home'));
 const Quotes = React.lazy(() => import('./components/Quotes'));
-const Projects = React.lazy(() => import('./components/Projects'));
-const Skills = React.lazy(() => import('./components/Skills'));
-const Footer = React.lazy(() => import('./components/Footer'));
+// const Projects = React.lazy(() => import('./components/Projects'));
+// const Skills = React.lazy(() => import('./components/Skills'));
+// const Footer = React.lazy(() => import('./components/Footer'));
 
 
 class App extends React.Component {
