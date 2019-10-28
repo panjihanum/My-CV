@@ -34,7 +34,7 @@ class Header extends React.Component{
     }
     render(){
         return (
-            <header className="header" >
+            <header className="header animated bounceInLeft" >
                 <nav className="navbar navbar-expand-lg navbar-light">
                     <img src={require("../assets/images/webp/logo.webp")} />
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
