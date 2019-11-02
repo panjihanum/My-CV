@@ -1,7 +1,7 @@
 import React from "react";
 import '../../src/assets/scss/_quotes.scss';
-import 'bootstrap/dist/css/bootstrap.css';
-import 'bootstrap/dist/js/bootstrap.js';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons'
 import $ from 'jquery';
 
 class Quotes extends React.Component{
@@ -34,7 +34,13 @@ class Quotes extends React.Component{
                     return(
                         <div className="col-md-12 col-lg-4" key={val.key}>
                             <div className="card-custom">
-                                {val.quote}
+                                
+                                <div className="card-custom-content">
+                                    <div className="card-custom-header">
+                                        <FontAwesomeIcon icon={faQuoteLeft} className="iconQuote"/>
+                                    </div>
+                                    {val.quote}
+                                </div>
                             </div>
                         </div>
                     )
