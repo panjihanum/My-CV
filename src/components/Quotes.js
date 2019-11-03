@@ -1,10 +1,11 @@
 import React from "react";
 import '../../src/assets/scss/_quotes.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons'
-import $ from 'jquery';
+import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons';
+
 
 class Quotes extends React.Component{
+
     constructor(props){
         super(props);
         this.state = {quotes: [
@@ -19,20 +20,21 @@ class Quotes extends React.Component{
                 quote: "Time isn't the main thing. It's only thing.",
             }
         ]}
-    };
+    }
 
     render(){
         return (
         <div className="quotes">
-            <img alt="tree" src={require('../assets/images/webp/tree-2.webp')} className="tree-2"/>
+            {/* <img alt="tree" src={require('../assets/images/webp/tree-2.webp')} className="tree-2"/> */}
+            <img alt="butterfly" src={require('../assets/images/animated-butterfly-image-0289.gif')} className="butterfly"/>
             <div className="header">
-                My<span className="green"> Quotes</span>
+                My <span className="green">Quotes</span>
             </div>
             <div className="row justify-content-md-center">
             {   
                 this.state.quotes.map(function(val, i){
                     return(
-                        <div className="col-md-12 col-lg-4" key={val.key}>
+                        <div className="col-md-12 col-lg-4"key={val.key}>
                             <div className="card-custom">
                                 
                                 <div className="card-custom-content">
@@ -48,7 +50,7 @@ class Quotes extends React.Component{
             }
             </div>
             <div className="header mt-5">
-                My<span className="green"> Motivation</span>
+                My <span className="green">Motivation</span>
             </div>
             <div className="video">
                 <div className="wrapper">
@@ -62,45 +64,6 @@ class Quotes extends React.Component{
         )
     }
 }
-$(document).ready(function() {
-    $('.card-custom').each(function(){
-        $(this).addClass('animated');
-        $(this).addClass('bounceInRight');
-        $(this).on('animationend', function() {
-            $(this).show();
-        })
-    });
 
-
-
-    ( function() {
-
-        var youtube = document.querySelectorAll( ".youtube" );
-        
-        for (var i = 0; i < youtube.length; i++) {
-            
-            var source = "https://img.youtube.com/vi/"+ youtube[i].dataset.embed +"/sddefault.jpg";
-            
-            var image = new Image();
-                    image.src = source;
-                    image.addEventListener( "load", function() {
-                        youtube[ i ].appendChild( image );
-                    }( i ) );
-            
-                    youtube[i].addEventListener( "click", function() {
-    
-                        var iframe = document.createElement( "iframe" );
-    
-                                iframe.setAttribute( "frameborder", "0" );
-                                iframe.setAttribute( "allowfullscreen", "" );
-                                iframe.setAttribute( "src", "https://www.youtube.com/embed/"+ this.dataset.embed +"?rel=0&showinfo=0&autoplay=1" );
-    
-                                this.innerHTML = "";
-                                this.appendChild( iframe );
-                    } );    
-        };
-        
-    } )();
-})
 
 export default Quotes;

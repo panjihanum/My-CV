@@ -5,8 +5,13 @@
     padding: 10px 100px;
     @media (max-width: 992px) {
         padding: 10px 0px;
+        margin: 0px;
     }
     position: relative;
+    .butterfly{
+        width: 100px;
+        position: absolute;
+    }
     .tree-2{
         min-height: 400px;
         max-height: 500px;
@@ -21,7 +26,7 @@
         }
     }
     .header{ 
-        font-size: 40px;
+        font-size: 25pt;
         margin-bottom: 40px;
         font-weight: bold;    
         display: block;
@@ -32,9 +37,6 @@
     .row{
         margin: auto;
         .col-md-12 {
-            @media (max-width: 992px) { 
-                margin-right: 20px;
-            }
             .card-custom {
                 @media (max-width: 992px) { 
                     margin-bottom: 25px;
@@ -77,9 +79,6 @@
             padding-top: 56.25%;
             overflow: hidden;
             cursor: pointer;
-            @media (max-width: 768px) {
-                margin-right: 20px;
-            }
         }
         .youtube img {
             width: 100%;

@@ -1,5 +1,6 @@
 .header{
     width: 100%;
+    
     display: -webkit-flex; /* Safari */
     -webkit-flex-direction: row; /* Safari 6.1+ */
     display: flex;
@@ -10,18 +11,17 @@
         .navbar-custom {
             margin: auto;
 
-
             @media (min-width: 992px) {
                 :hover{
                     width: 140px !important;
-                    margin-right: 10px;
-        
+                    margin-right: 5px;        
                 }
             }
             .nav-link {
                 :active{
                     box-shadow: 0px 0px #575858;
                 }
+                background: #efefef;
                 padding: 15px;
                 border-radius: 15px;
                 box-shadow: 1px 2px #575858;
@@ -34,12 +34,15 @@
             }
             @media (max-width: 992px) {
                 z-index: 99;
-                float: right;
-                text-align: right;
-		position: relative;
+                .nav-link{
+                    margin-right: 2px;
+                    margin-bottom: 10px;
+                    float: right;
+                    text-align: right;
+                    position: relative;
+                }
                 :hover{
                     width: 120px !important;
-        
                 }
             }
         }

@@ -1,17 +1,17 @@
 .home {
     width: 100vw;
-    height: calc(100vh - 78.03px);
+    height: 100vh;
     .content{
         .tree{
             min-height: 400px;
             max-height: 500px;
             height: 80vh;
-            position: absolute;
+            position: fixed;
             bottom: 0;
             right: 0;
             @media (max-width: 992px) {
-                min-height: 200px;
-                max-height: 300px;
+                min-height: 150px;
+                max-height: 200px;
             }
         }
         .text-container {
@@ -21,7 +21,7 @@
             max-width: 700px;
             @media (max-width: 992px) {
                 text-align: center !important;
-		margin-right: 20px;
+                left: 0px;
             }
 
             .text-content{
@@ -35,7 +35,6 @@
             }
             .text-child-content{
                 display: inline-block;
-                margin-left: 5px;
                 font-size: 25px;
                 @media (max-width: 992px) {
                     font-size: 20px;
@@ -47,4 +46,5 @@
 .green {
     color: green;
     font-weight: bold;
+    display: inline-block;
 }
