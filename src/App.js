@@ -9,9 +9,9 @@ import 'devicon/devicon.min.css';
 const Header  = React.lazy(() => import('./components/Header'));
 const Home = React.lazy(() => import('./components/Home'));
 const Quotes = React.lazy(() => import('./components/Quotes'));
-const Projects = React.lazy(() => import('./components/Projects'));
+// const Projects = React.lazy(() => import('./components/Projects'));
 const Skills = React.lazy(() => import('./components/Skills'));
-const Footer = React.lazy(() => import('./components/Footer'));
+// const Footer = React.lazy(() => import('./components/Footer'));
 
 
 class App extends React.Component {
@@ -29,8 +29,8 @@ class App extends React.Component {
           <Home />
           <Quotes />
           <Skills />
-          <Projects />
-          <Footer />
+          {/* <Projects />
+          <Footer /> */}
         </React.Suspense>
       </div>
     );

@@ -3,7 +3,6 @@ import "../../src/assets/scss/_skills.scss";
 
 
 class Skills extends React.Component {
-    // private  _categorySkill;
 
     constructor(){
         super();
@@ -70,11 +69,6 @@ class Skills extends React.Component {
                         name: "Nginx",
                         rating: "60",
                         style: "devicon-nginx-plain-wordmark colored"
-                    },
-                    {
-                        name: "MySql",
-                        rating: "60",
-                        style: "devicon-mysql-plain-wordmark colored"
                     }
                 ]},
                 {Mobile: [
@@ -93,6 +87,11 @@ class Skills extends React.Component {
                         name : "Postgresql",
                         rating: "70",
                         style: "devicon-postgresql-plain-wordmark colored"
+                    },
+                    {
+                        name: "MySql",
+                        rating: "60",
+                        style: "devicon-mysql-plain-wordmark colored"
                     }
                 ]},
                 {Designing: [
@@ -124,7 +123,8 @@ class Skills extends React.Component {
                         </div>
                     </div>
                 </div>
-                `;
+                `
+                return null;
             })  
             return listItem;
         }
