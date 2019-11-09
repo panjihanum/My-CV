@@ -1,0 +1,26 @@
+.footer {
+    @media (max-width : 920px) {
+        min-height: 150px;
+        max-height: 200px;
+    }
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 400px;
+    width: 150px;
+    border-radius: 50px 0px 0px 50px ;
+    background: #ffffffa8;
+    .row{
+        height: 100%;
+    }
+    .col-md-12{
+        width: 100%;
+        text-align: center;
+        margin: auto;
+    }
+    .fab{
+        font-size: 45px;
+    }
+}
