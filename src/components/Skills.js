@@ -60,11 +60,11 @@ class Skills extends React.Component {
                     },{
                         name : "Laravel",
                         rating: "60",
-                        style: "laravel"
+                        style: "devicon-laravel-plain-wordmark colored"
                     },{
                         name : "Node JS",
                         rating: "40",
-                        style: "nodejs"
+                        style: "devicon-nodejs-plain-wordmark colored"
                     }
                 ]},
                 {DevOps: [

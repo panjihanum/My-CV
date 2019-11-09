@@ -2,7 +2,7 @@ import React from "react";
 import '../../src/assets/scss/_quotes.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons';
-
+import $ from 'jquery';
 
 class Quotes extends React.Component{
 
@@ -64,6 +64,35 @@ class Quotes extends React.Component{
         )
     }
 }
+$(() =>{
+    ( function() {
 
+        var youtube = document.querySelectorAll( ".youtube" );
+        
+        for (var i = 0; i < youtube.length; i++) {
+            
+            var source = "https://img.youtube.com/vi/"+ youtube[i].dataset.embed +"/sddefault.jpg";
+            
+            var image = new Image();
+                    image.src = source;
+                    image.addEventListener( "load", function() {
+                        youtube[ i ].appendChild( image );
+                    }( i ) );
+            
+                    youtube[i].addEventListener( "click", function() {
+    
+                        var iframe = document.createElement( "iframe" );
+    
+                                iframe.setAttribute( "frameborder", "0" );
+                                iframe.setAttribute( "allowfullscreen", "" );
+                                iframe.setAttribute( "src", "https://www.youtube.com/embed/"+ this.dataset.embed +"?rel=0&showinfo=0&autoplay=1" );
+    
+                                this.innerHTML = "";
+                                this.appendChild( iframe );
+                    } );    
+        };
+        
+    } )();
+})
 
 export default Quotes;
