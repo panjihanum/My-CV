@@ -20,7 +20,7 @@ class Skills extends React.Component {
                 {Frontend : [
                     {
                         name : "HTML5",
-                        rating: "80",
+                        rating: "75",
                         style: "devicon-html5-plain-wordmark colored"
                     },{
                         name: "CSS3",
@@ -28,7 +28,7 @@ class Skills extends React.Component {
                         style: "devicon-css3-plain-wordmark colored"
                     },{
                         name: "SASS",
-                        rating: "70",
+                        rating: "65",
                         style: "devicon-sass-plain colored"
                     },{
                         name: "JavaScript",
@@ -36,11 +36,11 @@ class Skills extends React.Component {
                         style: "devicon-javascript-plain colored"
                     },{
                         name: "JQuery",
-                        rating: "80",
+                        rating: "72",
                         style: "devicon-jquery-plain-wordmark colored"
                     },{
                         name: "React",
-                        rating: "60",
+                        rating: "50",
                         style: "devicon-react-plain-wordmark colored"
                     },{
                         name: "Bootstrap",
@@ -57,17 +57,25 @@ class Skills extends React.Component {
                         name : "Adonis JS",
                         rating: "60",
                         style: "adonis-js"
+                    },{
+                        name : "Laravel",
+                        rating: "60",
+                        style: "laravel"
+                    },{
+                        name : "Node JS",
+                        rating: "40",
+                        style: "nodejs"
                     }
                 ]},
                 {DevOps: [
                     {
                         name: "AWS",
-                        rating: "50",
+                        rating: "35",
                         style: "devicon-amazonwebservices-plain-wordmark colored"
                     },
                     {
                         name: "Nginx",
-                        rating: "60",
+                        rating: "65",
                         style: "devicon-nginx-plain-wordmark colored"
                     }
                 ]},
@@ -78,26 +86,26 @@ class Skills extends React.Component {
                         style: "devicon-react-plain-wordmark colored"
                     },{
                         name : "Java Android",
-                        rating: "30",
+                        rating: "35",
                         style: "devicon-java-plain-wordmark colored"
                     }
                 ]},
                 {Database: [
                     {
                         name : "Postgresql",
-                        rating: "70",
+                        rating: "80",
                         style: "devicon-postgresql-plain-wordmark colored"
                     },
                     {
                         name: "MySql",
-                        rating: "60",
+                        rating: "85",
                         style: "devicon-mysql-plain-wordmark colored"
                     }
                 ]},
                 {Designing: [
                     {
                         name : "Adobe Photoshop",
-                        rating: "30",
+                        rating: "45",
                         style: "devicon-photoshop-plain colored"
                     }
                 ]}
