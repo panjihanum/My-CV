@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import './assets/css/animate.css';
-import './assets/scss/main.scss';
+import './assets/scss/all.scss';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.js';
 import 'devicon/devicon.min.css';

@@ -1,5 +1,4 @@
 import React from "react";
-import '../../src/assets/scss/_header.scss';
 import $ from 'jquery';
 
 

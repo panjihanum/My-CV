@@ -1,5 +1,4 @@
 import React from "react";
-import '../../src/assets/scss/_quotes.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons';
 import $ from 'jquery';

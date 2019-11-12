@@ -1,6 +1,4 @@
 import React from 'react';
-import "../../src/assets/scss/_skills.scss";
-
 
 class Skills extends React.Component {
 

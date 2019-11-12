@@ -1,5 +1,4 @@
 import React from 'react';
-import "../../src/assets/scss/_footer.scss";
 import "../../src/assets/fontAwesome/css/all.css";
 
 class Footer extends React.Component {
