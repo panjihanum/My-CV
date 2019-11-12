@@ -25,7 +25,7 @@ class Quotes extends React.Component{
         return (
         <div className="quotes">
             {/* <img alt="tree" src={require('../assets/images/webp/tree-2.webp')} className="tree-2"/> */}
-            <img alt="butterfly" src={require('../assets/images/animated-butterfly-image-0289.gif')} className="butterfly"/>
+            {/* <img alt="butterfly" src={require('../assets/images/animated-butterfly-image-0289.gif')} className="butterfly"/> */}
             <div className="header">
                 My <span className="green">Quotes</span>
             </div>
